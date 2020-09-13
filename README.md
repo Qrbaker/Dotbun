@@ -1,9 +1,3 @@
----
-title: 'About .Bun'
----
-
-#### [](https://dotbun.com)←Back to DotBun
-
 About .Bun
 ==========
 
@@ -81,10 +75,8 @@ on this website, please copy the *static link* and send it to
 will blacklist it if you so desire. Please note that improving this
 process is something I'm actively working on.
 
-<div class="ascii-art">
-
-/) /) ( \^.\^ ) C(") (")
-
-</div>
+  /) /) 
+( \^.\^ ) 
+C(") (")
 
 ![](https://MYCODE.goatcounter.com/count?p=/test-img)
