@@ -1,0 +1,41 @@
+body {
+    margin: 40px auto;
+    max-width: 850px;
+    line-height: 1.6;
+    font-family: segoe UI, Helvetica, Veranda, sans-serif;
+    font-size: 18px;
+    background-color: #2e2e2e;
+    color: #ddd;
+    padding: 0 10px;
+}
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+
+a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+    line-height: 1;
+    font-size: 12px;
+}
