@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    font-size: 312%;
+    background-color: #2e2e2e;
+}
+
+@media(min-width:1200px) {
+    body {
+        font-size: 100%
+    }
+}
+
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+picture {
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+div.aboutlink {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 48px;
+    height: 48px;
+    z-index: 500;
+}
+
+div.newpiclink {
+    position: absolute;
+    text-shadow: 1px 1px 3px #000;
+    text-align: center;
+    width: 100%;
+    bottom: 0.6em;
+}
+
+
+/* div.staticlink {
+    position: absolute;
+    text-shadow: 1px 1px 3px #000;
+    text-align: center;
+    width: 100%;
+    top: 0.6em;
+  } */
+
+@media(min-width:1200px) {
+    div.aboutlink {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media(min-width:1200px) {
+    div.newpiclink {
+        text-shadow: 1px 1px 3px #000;
+        width: auto;
+        right: 1.2em;
+        bottom: 1.2em;
+    }
+}
+
+@media(min-width:1200px) {
+    div.staticlink {
+        text-shadow: 1px 1px 3px #000;
+        width: auto;
+        left: 1.2em;
+        top: unset;
+        bottom: 1.2em;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.is-paused {
+    animation-play-state: paused;
+}

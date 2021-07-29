@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>.Bun</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="canonical" href="https://dotbun.com/">
+    <!--Analytics-->
+    <script data-goatcounter="https://dotbun.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body>
+    <div class="aboutlink">
+        <a href="about.html">
+            <img src="static/info.svg" alt="About Page Link" title="About .Bun">
+        </a>
+    </div>
+    <div class="loader">
+        <picture>
+            <img src="static/loading.svg">
+        </picture>
+    </div>
+    <div class="imgbox center-fit js-fade fade-in is-paused">
+        <picture>
+            <img id="main_img" src="" title="Bunny!" alt="A bunny picture :)">
+        </picture>
+    </div>
+    <div class="newpiclink">
+        <a href=".">[More Buns]</a>
+    </div>
+    <script>
+        var image = document.getElementById("main_img")
+        var fade_elements = document.querySelector('.js-fade')
+        var downloadingImage = new Image()
+        fetch('https://auccypbji2.execute-api.us-east-2.amazonaws.com/random-img')
+            .then(resp => resp.text())
+            .then((url) => {
+                console.log("Got URL: %s", url)
+                image.src = url
+                    // Using a small timeout reduces image flashing
+                setTimeout(() => {
+                    if (fade_elements.classList.contains('is-paused')) {
+                        fade_elements.classList.remove('is-paused')
+                    }
+                    document.querySelector(".loader").style.visibility = 'hidden'
+                }, 50)
+            })
+    </script>
+</body>
+
+</html>
