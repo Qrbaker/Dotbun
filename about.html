@@ -25,8 +25,8 @@
 
     <h2>Some Nerd Stuff</h2>
 
-    <p>When you load the main page, a JavaScript FETCH request is made to an AWS API Endpoint. This selects a random object from an S3 bucket and returns a pre-signed URL to it, which is then set as the <code>src</code> element of the main image on the page.</p>
-    <p>The static portions of the site (html/css/some SVGs) are hosted using AWS S3 Static Hosting.</p>
+    <p>When you load the main page, a JavaScript FETCH request is made to an AWS API Endpoint. This selects a random object from an S3 bucket and returns a CloudFront URL to it, which is then set as the <code>src</code> element of the main image on the page.</p>
+    <p>The static portions of the site (html/css/some SVGs) are hosted using AWS S3 Static Hosting. Everything is behind Amazon's global CDN for improved performance as well as cheaper costs (due to edge caching).</p>
 
     <h2> To-Do List </h2>
 
@@ -35,7 +35,6 @@
         <li>Image Optimization Preprocessing</li>
         <li>Backward/Forward Navigation</li>
         <li>Selective element reloading (not the whole page)</li>
-        <li>CloudFront CDN Integration</li>
         <li>More Bunny Pictures!</li>
     </ul>
 
