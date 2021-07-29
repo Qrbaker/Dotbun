@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    overflow: clip;
 }
 
 body {
@@ -53,13 +54,24 @@ a:active {
     left: 50%;
     margin-top: -50px;
     margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+#spinner {
+    width: 200%;
+    margin-left: -50%;
+}
+
+#info {
+    width: 100%;
 }
 
 picture {
     margin: auto;
 }
 
-img {
+#main_img {
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
@@ -92,6 +104,13 @@ div.newpiclink {
   } */
 
 @media(min-width:1200px) {
+    #spinner {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+@media(min-width:1200px) {
     div.aboutlink {
         height: 24px;
         width: 24px;
@@ -104,6 +123,7 @@ div.newpiclink {
         width: auto;
         right: 1.2em;
         bottom: 1.2em;
+        font-size: x-large;
     }
 }
 
