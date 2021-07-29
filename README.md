@@ -21,33 +21,18 @@ time.
 Some Nerd Stuff
 ---------------
 
-When you load the main page, a little php script selects a random file
-name. If its a still image (png/jpg) it produces html that will attempt
-to show a webp picture, with a fallback to the original format. I also
-made the static links the original format, to make them more accessible
-to hotlinking and sharing.
-
-If its a gif, it displays it without fallback (since webp doesn't handle
-moving images). If the random file is a video, it instead generates a
-&lt;video&gt; tag that is set to maximum size without affecting aspect
-ratio, centered in the screen. I use the tag &lt;video autoplay loop&gt;
-for gif-like behavior.
-
-I used media selectors to make the website somewhat responsive. If your
-horizontal size is below a given limit, the static link and refresh
-buttons are enlarged and moved from the corners to the top and bottom of
-the page.
-
-By opportunistically using webp, and relying on php pre-processing with
-NO javascript, I got a 100 on both desktop and mobile according to
-google's pageSpeed insights.
+When you load the main page, a JavaScript FETCH request is made to an AWS API Endpoint. This selects a random object from an S3 bucket and returns a pre-signed URL to it, which is then set as the `src` element of the main image on the page.
+The static portions of the site (html/css/some SVGs) are hosted using AWS S3 Static Hosting.
 
 To-Do List
 ----------
 
--   Data Rights Handling
--   Upload page - allow submissions
+-   Partial Content Refresh (just reload the picture, not the whole page)
+-   CloudFront CDN integration
+-   Video Support
+-   Image Optimization Preprocessing
 -   Backward/Forward Navigation
+-   More Bunny Pictures!
 
 Data Management
 ---------------

@@ -25,32 +25,37 @@
 
     <h2>Some Nerd Stuff</h2>
 
-    <p> TODO: explain how this works
+    <p>When you load the main page, a JavaScript FETCH request is made to an AWS API Endpoint. This selects a random object from an S3 bucket and returns a pre-signed URL to it, which is then set as the <code>src</code> element of the main image on the page.</p>
+    <p>The static portions of the site (html/css/some SVGs) are hosted using AWS S3 Static Hosting.</p>
 
-        <h2> To-Do List </h2>
+    <h2> To-Do List </h2>
 
-        <ul>
-            <li>Backward/Forward Navigation</li>
-            <li>Selective element reloading (not the whole page)</li>
-        </ul>
+    <ul>
+        <li>Video Support</li>
+        <li>Image Optimization Preprocessing</li>
+        <li>Backward/Forward Navigation</li>
+        <li>Selective element reloading (not the whole page)</li>
+        <li>CloudFront CDN Integration</li>
+        <li>More Bunny Pictures!</li>
+    </ul>
 
-        <h2>Data Management</h2>
-        The website dotbun.com has no ads, and is not monitized. I use <a href="https://dotbun.goatcounter.com">GoatCounter</a> to keep track of basic stats, but these stats are completely anonymized and do not follow you off this site. To quote the developer
-        of GoatCounter:
-        <blockquote cite="https://www.arp242.net/dnt.html">
-            To give a real-world analogy: it just counts how many people are entering your shop through which door. What it doesn’t do is then follow those people after they’ve left your store to see which other stores they visit, snoop on as much personal details
-            as possible, and create a profile based on that. That’s what tracking is, and is just not the same thing as what GoatCounter is doing.
-        </blockquote>
-        <h3>Takedowns</h3>
-        If you see a piece of media that belongs to you, and you don't want it on this website, please copy the <i>static
+    <h2>Data Management</h2>
+    The website dotbun.com has no ads, and is not monitized. I use <a href="https://dotbun.goatcounter.com">GoatCounter</a> to keep track of basic stats, but these stats are completely anonymized and do not follow you off this site. To quote the developer
+    of GoatCounter:
+    <blockquote cite="https://www.arp242.net/dnt.html">
+        To give a real-world analogy: it just counts how many people are entering your shop through which door. What it doesn’t do is then follow those people after they’ve left your store to see which other stores they visit, snoop on as much personal details
+        as possible, and create a profile based on that. That’s what tracking is, and is just not the same thing as what GoatCounter is doing.
+    </blockquote>
+    <h3>Takedowns</h3>
+    If you see a piece of media that belongs to you, and you don't want it on this website, please copy the <i>static
     link</i> and send it to
-        <a href="/cdn-cgi/l/email-protection#790e1c1b14180a0d1c0b391d160d1b0c17571a1614"><span class="__cf_email__"
-      data-cfemail="b8cfdddad5d9cbccddcaf8dcd7ccdacdd696dbd7d5">[email&#160;protected]</span></a>. If you are a reddit user, you can also send me your username and I will blacklist it if you so desire. Please note that improving this process is
-        something I'm actively working on.
+    <a href="/cdn-cgi/l/email-protection#790e1c1b14180a0d1c0b391d160d1b0c17571a1614"><span class="__cf_email__"
+      data-cfemail="b8cfdddad5d9cbccddcaf8dcd7ccdacdd696dbd7d5">[email&#160;protected]</span></a>. If you are a reddit user, you can also send me your username and I will blacklist it if you so desire. Please note that improving this process is something
+    I'm actively working on.
 
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-        <script data-goatcounter="https://dotbun.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-        <noscript><img src="https://MYCODE.goatcounter.com/count?p=/test-img"></noscript>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script data-goatcounter="https://dotbun.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <noscript><img src="https://MYCODE.goatcounter.com/count?p=/test-img"></noscript>
 </body>
 
 </html>
