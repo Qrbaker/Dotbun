@@ -92,16 +92,18 @@ div.newpiclink {
     text-align: center;
     width: 100%;
     bottom: 0.6em;
+    opacity: 80%;
 }
 
-
-/* div.staticlink {
+div.staticlink {
     position: absolute;
     text-shadow: 1px 1px 3px #000;
     text-align: center;
     width: 100%;
     top: 0.6em;
-  } */
+    font-size: 80%;
+    opacity: 50%;
+}
 
 @media(min-width:1200px) {
     #spinner {
